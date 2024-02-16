@@ -4,9 +4,388 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Parts</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/carParts.css" />
   </head>
   <body class="body">
-    <script src="./js/script.js"></script>
+    <div class="top-bar">
+      <nav>
+        <ul class="nav-bar">
+          <p>Contact our Customer Service</p>
+          <li class="phone">
+            <img
+              src="./img/car_parts/phone.png"
+              alt="Phone"
+              width="16px"
+              height="16px"
+            />
+            <p>(800) 333-3567</p>
+          </li>
+          <img
+            src="./img/car_parts/oval.png"
+            alt="Dot"
+            width="6px"
+            height="6px"
+          />
+          <li><a href="#">ABOUT US</a></li>
+          <img
+            src="./img/car_parts/oval.png"
+            alt="Dot"
+            width="6px"
+            height="6px"
+          />
+          <li><a href="#">CONTACT US</a></li>
+          <img
+            src="./img/car_parts/oval.png"
+            alt="Dot"
+            width="6px"
+            height="6px"
+          />
+          <li><a href="#">WHERE TO BUY</a></li>
+        </ul>
+      </nav>
+
+      <p>Promo message area - shipping advantages, special offers…</p>
+
+      <a href="#" class="sign-in" onclick="confirmClickedElement()">
+        <img
+          src="./img/car_parts/sign_in.png"
+          alt="Sign in"
+          width="12px"
+          height="16px"
+        />
+        <p>SIGN IN</p>
+      </a>
+    </div>
+    <!-- <div class="wrapper"> -->
+    <header>
+      <h1>Company logo</h1>
+      <nav>
+        <ul class="menu-bar">
+          <li class="menu-item">
+            <div class="slash"></div>
+            <a href="#">SOFT TOP PRODUCTS</a>
+          </li>
+          <li class="menu-item">
+            <div class="slash"></div>
+            <a href="#">JEEP ACCESSORIES</a>
+          </li>
+        </ul>
+      </nav>
+      <search>
+        <form class="search" action="./search/">
+          <label for="search-store">
+            <input
+              type="search"
+              id="search-store"
+              name="search"
+              placeholder="Search entire store here..."
+            />
+          </label>
+          <button type="submit">
+            <img src="./img/car_parts/search_black.png" alt="Search" />
+          </button>
+        </form>
+      </search>
+      <a href="#" class="minicart">
+        <div class="minicart-items-count">2</div>
+        <div class="minicart-item">
+          <img src="./img/car_parts/shopping_cart.png" alt="Shopping cart" />
+          <p>MY CART</p>
+          <img
+            src="./img/car_parts/dropdown_white.png"
+            alt="Show cart details"
+          />
+        </div>
+      </a>
+    </header>
+
+    <main class="cart-items">
+      <h1>SHOPPING CART</h1>
+      <div class="content">
+        <div class="grid-area-1">
+          <div class="div1">Item</div>
+          <div class="div2">Qty</div>
+          <div class="div3">SUBTOTAL</div>
+        </div>
+        <ul class="main-ul">
+          <li class="grid-area-2">
+            <div class="div4">
+              <img
+                src="./img/car_parts/flip_top_frameless.png"
+                alt="Flip top"
+              />
+            </div>
+            <div class="div5">
+              FLIP TOP™ COMPLETE REPLACEMENT SOFT TOP, JEEP 1976-1995
+              CJ-7/WRANGLER, NO DOORS INCLUDED, CLEAR SIDE AND REAR WINDOWS
+            </div>
+            <div class="div6">Color:</div>
+            <div class="div7">Black Denim</div>
+            <div class="div8">1</div>
+            <div class="div9">
+              <p>$</p>
+              <p class="subtotal-price">150.00</p>
+            </div>
+            <div class="div10">
+              <button>
+                <img src="./img/car_parts/edit.png" alt="Edit" />
+              </button>
+              <button>
+                <img
+                  class="cancel"
+                  src="./img/car_parts/edit_cancel.png"
+                  alt="Cancel"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="grid-area-2">
+            <div class="div4">
+              <img
+                src="./img/car_parts/flip_top_frameless.png"
+                alt="Flip top"
+              />
+            </div>
+            <div class="div5">
+              FLIP TOP™ PREMIUM - COMPLETE REPLACEMENT SOFT TOP, JEEP 1995
+              CJ-7/WRANGLER, NO DOORS INCLUDED, CLEAR SIDE AND REAR WINDOWS
+            </div>
+            <div class="div6">Color:</div>
+            <div class="div7">Black Denim, MATT</div>
+            <div class="div8">1</div>
+            <div class="div9">
+              <p>$</p>
+              <p class="subtotal-price">250.00</p>
+            </div>
+            <div class="div10">
+              <button>
+                <img src="./img/car_parts/edit.png" alt="Edit" />
+              </button>
+              <button>
+                <img
+                  src="./img/car_parts/edit_cancel.png"
+                  class="cancel"
+                  alt="Cancel"
+                />
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="grid-area-3">
+          <div class="discount">
+            <form class="search discount-code" action="./search/">
+              <label for="discount">
+                <input
+                  type="search"
+                  id="discount"
+                  name="enter-discount"
+                  placeholder="Enter Discount Code"
+                />
+              </label>
+            </form>
+            <div>
+              <button
+                class="discount-button"
+                type="submit"
+                onclick="confirmClickedElement()"
+              >
+                APPLY
+              </button>
+            </div>
+          </div>
+          <div>
+            <button
+              class="update-cart"
+              type="submit"
+              onclick="confirmClickedElement()"
+            >
+              UPDATE SHOPPING CART
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+        <h1>SUMMARY</h1>
+
+        <div>
+          <button onclick="showSummaryEstimate()" class="summary-top">
+            ESTIMATE SHIPPING AND TAX
+            <img
+              class="expand-estimate-img"
+              src="./img/car_parts/shipping_and_tax_expand.png"
+              alt="Open"
+            />
+            <img
+              class="shrink-estimate-img"
+              src="./img/car_parts/shipping_and_tax_shrink.png"
+              alt="Close"
+            />
+          </button>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="summary-estimate">
+          <form action="./search/">
+            <label for="country"
+              >Country
+              <!-- TODO: zamijeniti klasični "select" -->
+              <div class="country-input">
+                <select name="country" id="country">
+                  <option></option>
+                  <option>Brazil</option>
+                  <option selected>Croatia</option>
+                  <option>Germany</option>
+                  <option>Japan</option>
+                  <option>Spain</option>
+                  <option>United States</option>
+                </select>
+                <!-- <img src="./img/car_parts/dropdown_black.png" alt="Dropdown" /> -->
+              </div>
+              <!-- <div class="country-input">
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  placeholder="United States"
+                  width="100%"
+                />
+                <button type="submit">
+                  TODO: provjeriti koji "type" treba
+                  <img src="./img/car_parts/dropdown_black.png" alt="Dropdown" />
+                </button>
+              </div> -->
+            </label>
+
+            <label for="state/province"
+              >State/Province
+              <input type="text" id="state/province" name="state/province" />
+            </label>
+
+            <label for="zip/postal-code"
+              >Zip/Postal Code
+              <input
+                type="number"
+                id="zip/postal-code"
+                name="zip/postal-code"
+              />
+            </label>
+
+            <label for="flat-rate">
+              Flat Rate
+              <div class="radio-input">
+                <input
+                  type="radio"
+                  id="flat-rate"
+                  name="flat-rate"
+                  value="fixed"
+                  checked
+                />
+                <p>Fixed</p>
+                <p class="radio-input-price">($5.00)</p>
+              </div>
+            </label>
+          </form>
+        </div>
+
+        <div class="summary-middle">
+          <div class="subtotal-shipping">
+            <div class="subtotal-shipping-left">
+              <div class="subtotal">SUBTOTAL</div>
+              <div class="shipping-flat_rate">
+                <div class="shipping">SHIPPING</div>
+                <div class="flat-rate">(Flat Rate - Fixed)</div>
+              </div>
+            </div>
+            <div class="subtotal-shipping-right">
+              <div class="subtotal-right">
+                <!-- <p class="display-subtotal-price">150.00</p> -->
+                <p class="display-subtotal-price"></p>
+              </div>
+              <div class="shipping-right">
+                <p>$</p>
+                <p class="display-shipping-price">5.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="summary-bottom">
+          <div class="order-total">
+            <div>ORDER TORTAL</div>
+            <!-- <div class="order-total-price">$155.00</div> -->
+            <div class="order-total-price"></div>
+          </div>
+          <div>
+            <button
+              class="checkout"
+              type="submit"
+              onclick="confirmClickedElement()"
+            >
+              PROCEED TO CHECKOUT
+            </button>
+          </div>
+          <p>
+            <a href="#">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- </div> -->
+    <footer>
+      <div class="bottom-bar">
+        <nav>
+          <ul class="nav-bar">
+            <li><a href="#">ABOUT US</a></li>
+            <img
+              src="./img/car_parts/slash_white.png"
+              alt="Slash"
+              width="10px"
+              height="21px"
+            />
+            <li><a href="#">CONTACT US</a></li>
+            <img
+              src="./img/car_parts/slash_white.png"
+              alt="Slash"
+              width="10px"
+              height="21px"
+            />
+            <li><a href="#">SEARCH TERMS</a></li>
+            <img
+              src="./img/car_parts/slash_white.png"
+              alt="Slash"
+              width="10px"
+              height="21px"
+            />
+            <li><a href="#">PRIVACY AND COOKIE POLICY</a></li>
+            <img
+              src="./img/car_parts/slash_white.png"
+              alt="Slash"
+              width="10px"
+              height="21px"
+            />
+            <li><a href="#">INSTALLATION VIDEOS</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <p>Contact our Customer Service</p>
+          <li class="phone">
+            <img
+              src="./img/car_parts/phone.png"
+              alt="Phone"
+              width="16px"
+              height="16px"
+            />
+            <p>(800) 333-3567</p>
+          </li>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/carParts.js"></script>
+    <script src="./js/displayCarPartsSubtotal.js"></script>
   </body>
 </html>
